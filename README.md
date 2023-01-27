@@ -1,5 +1,7 @@
 #Lua GUI
 
+this is a fork of Lua GUI where you could add a icon to the window. ill probably add more
+
 Lua GUI is a library for creating GUIs with Lua aimed at unexperienced programmers. The library is being developed with the following goals in mind.
 
 * Easy to use.
