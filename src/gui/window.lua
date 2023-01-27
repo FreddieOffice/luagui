@@ -15,6 +15,11 @@ common.add_label(metatable, 'window', 'title')
 common.add_color(metatable, 'window')
 common.add_resizable(metatable, 'window')
 
+function metatable.set_icon(object, value)
+  local icon = wx.wxIcon(value, wx.wxBITMAP_TYPE_ICO)
+  object.wx:SetIcon(icon)
+end
+
 function metatable.set_cursor(object, value)
   local cursors = {
     ["arrow"] = wx.wxCURSOR_ARROW,
