@@ -1,6 +1,6 @@
 #Lua GUI
 
-this is a fork of Lua GUI where you could add a icon to the window. ill probably add more
+This is a fork of Lua GUI with more stuff like a media player and adding an icon to a window (those arent in the original Lua GUI). I didnt write LuaGUI [williamwilling](https://github.com/williamwilling) did, i just forked it and added more stuff.
 
 Lua GUI is a library for creating GUIs with Lua aimed at unexperienced programmers. The library is being developed with the following goals in mind.
 
