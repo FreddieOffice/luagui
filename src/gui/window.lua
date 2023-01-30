@@ -6,6 +6,7 @@ local TextBox = require 'gui.text_box'
 local Dialog = require 'gui.dialog'
 local FileDialog = require 'gui.file_dialog'
 local Image = require 'gui.image'
+local MediaPlayer = require 'gui.media_player'
 
 local Window = {}
 local metatable = common.create_metatable(Window)
@@ -114,6 +115,10 @@ end
 
 function Window:add_text_box()
   return TextBox.create(self)
+end
+
+function Window:add_media_player()
+  return MediaPlayer.create(self)
 end
 
 function Window:close()
