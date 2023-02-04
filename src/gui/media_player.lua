@@ -30,5 +30,11 @@ end
 function MediaPlayer:play()
     self.wx:Play()
 end
+function MediaPlayer:pause()
+    self.wx:Pause()
+end
+function MediaPlayer:stop()
+    self.wx:Stop()
+end
 
 return MediaPlayer
