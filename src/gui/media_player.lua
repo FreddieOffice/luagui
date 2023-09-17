@@ -1,9 +1,19 @@
 local common = require 'gui.common'
 
 local MediaPlayer = {}
+common.is_destroyable(MediaPlayer)
+
 local metatable = common.create_metatable(MediaPlayer)
 common.add_position(metatable, 'media_player')
 common.add_size(metatable, 'media_player')
+
+function metatable.get_volume(object)
+    return object.wx:GetVolume()
+end
+
+function metatable.set_volume(object, value)
+    object.wx:SetVolume(value)
+end
 
 function metatable.set_file_name(object, value)
     object.wx:Load(value)
