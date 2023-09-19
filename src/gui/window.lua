@@ -21,6 +21,11 @@ function metatable.set_icon(object, value)
   object.wx:SetIcon(icon)
 end
 
+function metatable.set_status_text(object, value)
+  object.wx:CreateStatusBar(1)
+  object.wx:SetStatusText(value)
+end
+
 function metatable.set_cursor(object, value)
   local cursors = {
     ["arrow"] = wx.wxCURSOR_ARROW,
